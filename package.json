@@ -1,0 +1,14 @@
+{
+  "name": "parcel-multi-entry-poc",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "parcel watch ./src/*.{ts,js}",
+    "build": "parcel build ./src/*.{ts,js} --no-source-maps"
+  },
+  "author": "Ivan Pazhitnykh <ivan.pazhitnykh@gmail.com> (https://github.com/Drapegnik)",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
