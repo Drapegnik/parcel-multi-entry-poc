@@ -1,4 +1,4 @@
-import { logger } from './shared/lib';
+import { logger } from 'shared/lib';
 
 const sum = (a: number, b: number) => a + b;
 

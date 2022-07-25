@@ -1,3 +1,3 @@
-import { logger } from './shared/lib';
+import { logger } from 'shared/lib';
 
 logger('second');
