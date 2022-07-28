@@ -4,12 +4,17 @@
   "description": "",
   "scripts": {
     "start": "parcel watch ./src/entry/*.{ts,js}",
-    "build": "parcel build ./src/entry/*.{ts,js} --no-source-maps"
+    "build": "parcel build ./src/entry/*.{ts,js} --no-source-maps",
+    "size-limit": "size-limit",
+    "build-no-cache": "rm -rf dist && npm run build",
+    "check-size": "npm run build-no-cache && size-limit"
   },
   "author": "Ivan Pazhitnykh <ivan.pazhitnykh@gmail.com> (https://github.com/Drapegnik)",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "@size-limit/file": "^7.0.8",
+    "parcel": "^2.6.2",
+    "size-limit": "^7.0.8"
   },
   "alias": {
     "features": "./src/features",
